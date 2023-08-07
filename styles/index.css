@@ -80,3 +80,14 @@ main {
   font-size: 2vw;
   letter-spacing: 0.5vw;
 }
+
+
+.attribution {
+  height: 5vh;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+}
