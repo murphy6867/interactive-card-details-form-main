@@ -11,29 +11,38 @@
 </head>
 <body>
   <main>
- <!-- Moblie Layout -->
-    <div class="container bg-black d-sm-none p-0 border-0">
-      <div class="bg-mobile position-relative">
-        <div class="back card position-absolute z-1 rounded-3 border-0">
-          <img src="/images/bg-card-back.png" alt="">
-          <p class="position-fixed z-3 text-white">000</p>
+  <main>
+    <div class="container-fluid p-0">
+      <div class="d-flex flex-column flex-md-row">
+        <div class="bg-website p-4">
+          <div class="card-container d-flex position-relative">
+            <div class="card-box card-back position-absolute rounded">
+              <p class="text-white position-absolute">000</p>
+            </div>
+            <div class="card-box card-front position-absolute rounded">
+              <img class="position-absolute" src="./images/card-logo.svg" alt="logo-card" />
+              <p class="text-white position-absolute">0000 0000 0000 0000</p>
+              <p class="text-white position-absolute text-uppercase">jane appleseed</p>
+              <p class="text-white position-absolute text-uppercase">00/00</p>
+            </div>
+          </div>
         </div>
-        <div class="front card position-absolute z-3 rounded-3 border-0">
-          <img src="/images/bg-card-front.png" alt="">
-          <div class="position-fixed z-4 bg-white rounded-circle"></div>
-          <div class="position-fixed z-4 rounded-circle "></div>
-          <p class="position-fixed z-3 text-white fw-normal">0000 0000 0000 0000</p>
-          <p class="position-fixed z-3 text-white fw-normal text-uppercase">jane appleseed</p>
-          <p class="position-fixed z-3 text-white fw-normal">00/00</p>
+        <div class="user-input">
+          2
         </div>
       </div>
     </div>
-
-<!-- Desktop Layout -->
   </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.linkedin.com/in/murphy6867/" target="_blank">Sonsawan Ngamsom</a>.
   </footer>
+  <!-- <script src="./validation.js"></script> -->
+  <script>
+    document.getElementById("card_form").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+      window.location.href = "./pages/success.html";
+    });
+  </script>
 </body>
 </html>

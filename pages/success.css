@@ -1,0 +1,88 @@
+main {
+    min-width: 100vw;
+    height: 95vh;
+  }
+
+h1 {
+    letter-spacing: 0.8vw;
+}
+
+p {
+    color: #959196;
+}
+  
+.bg-mobile {
+    max-width: 100%;
+    min-height: 56vw;
+    background-image: url("../images/bg-main-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 70vw;
+    height: auto;
+    border: 0;
+  }
+  
+  .back {
+    top: 6vw;
+    left: 25vw;
+  }
+  
+  .back img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .back p {
+    top: 22.5vw;
+    left: 80vw;
+    font-size: 3vw;
+  }
+  
+  .front {
+    top: 27.5vw;
+  }
+  
+  .front :nth-child(2) {
+    top: 31.5vw;
+    left: 9vw;
+    width: 8vw;
+    height: 8vw;
+  }
+  
+  .front :nth-child(3) {
+    top: 34vw;
+    left: 19.5vw;
+    width: 3vw;
+    height: 3vw;
+    border: 1px solid #fff;
+  }
+  
+  .front :nth-child(4) {
+    top: 48.5vw;
+    left: 9vw;
+    font-size: 4.5vw;
+    letter-spacing: 0.5vw;
+  }
+  
+  .front :nth-child(5) {
+    top: 58.5vw;
+    left: 9vw;
+    font-size: 2vw;
+    letter-spacing: 0.5vw;
+  }
+  
+  .front :nth-child(6) {
+    top: 58.5vw;
+    left: 61vw;
+    font-size: 2vw;
+    letter-spacing: 0.5vw;
+  }
+
+.continue-bt {
+    background-color: #220832;
+}
