@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .bg-website {
@@ -76,6 +77,41 @@
   letter-spacing: 0.1vw;
 }
 
+/* User Input */
+.user-input {
+  min-width: 70vw;
+  height: 95vh;
+}
+
+.user-input-container {
+  width: 40vw;
+  margin-left: 8vw;
+}
+
+label {
+  letter-spacing: 0.4vw;
+  font-size: 1vw;
+}
+
+input {
+  border: 1px solid #DCDCDC;
+  letter-spacing: 0.1vw;
+  font-weight: 500;
+}
+
+input[type="submit"] {
+  background-color: #220A30;
+}
+
+input::placeholder {
+  color: #C4C2C4;
+  font-weight: 500;
+}
+
+.card_cvc {
+  margin-left: 0.5vw;
+}
+
 
 @media screen and (max-width: 767px) {
   
@@ -142,15 +178,32 @@
     font-size: 2.7vw;
     letter-spacing: 0.4vw;
   }
+
+  /* User input */
+  .user-input {
+    min-width: 70vw;
+    height: auto;
+  }
+
+  .user-input-container {
+    width: 100%;
+    margin-left: 0vw;
+  }
+
+  label {
+    letter-spacing: 0.4vw;
+    font-size: 3vw;
+  }
+  
+  input {
+    letter-spacing: 0.2vw;
+    font-weight: 500;
+  }
+  
 }
 
 /* Footer  */
 .attribution {
   height: 5vh;
-  font-size: 1.5vw;
-  text-align: center;
 }
 
-.attribution a {
-  text-decoration: none;
-}

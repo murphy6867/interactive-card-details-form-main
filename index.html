@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles/index.css" />
@@ -27,19 +30,35 @@
             </div>
           </div>
         </div>
-        <div class="user-input">
-          2
+        <div class="user-input container pt-5 px-4 d-md-flex align-items-center justify-content-center">
+          <div class="user-input-container row mt-3 pt-3 d-md-flex align-items-center justify-content-center">
+            <form  method="post" id="card_information">
+              <label class="col-12 text-uppercase pt-4 fw-medium" for="card_name">cardholder name</label>
+              <input class="col-12 py-2 px-3 mt-2 py-md-3 rounded" type="text" name="card_name" id="card_name" placeholder="e.g. Jane Appleseed" required />
+
+              <label class="col-12 text-uppercase pt-4 fw-medium" for="card_number">card number</label>
+              <input class="col-12 py-2 px-3 mt-2 py-md-3 rounded" type="number" name="card_number" id="card_number" placeholder="e.g. 1234 5678 9123 0000" required />
+
+              <label class="col-7 text-uppercase pt-4 fw-medium" for="card_date">exp. date (mm/yy)</label>
+              <label class="col-3  text-uppercase pt-4 fw-medium" for="card_cvc">cvc</label>
+              <input class="col-3 py-2 px-3 mt-2 py-md-3 rounded me-1" type="number" name="card_mm" id="card_date" placeholder="MM" required />
+              <input class="col-3 py-2 px-3 mt-2 py-md-3 rounded me-2 " type="number" name="card_yy" id="card_date" placeholder="YY" required />
+              <input class="card_cvc col-5 py-2 px-3 mt-2 py-md-3 rounded " type="number" name="card_cvc" id="card_cvc" placeholder="e.g. 123" required />
+              
+              <input class="mt-4 p-3 w-100 rounded-3 text-white fw-medium" type="submit" value="Confirm">
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </main>
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.linkedin.com/in/murphy6867/" target="_blank">Sonsawan Ngamsom</a>.
+  <footer class="attribution mt-5 m-md-0 p-md-2 fs-6 text-center">
+    Challenge by <a class="text-decoration-none" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="text-decoration-none"  href="https://www.linkedin.com/in/murphy6867/" target="_blank">Sonsawan Ngamsom</a>.
   </footer>
   <!-- <script src="./validation.js"></script> -->
   <script>
-    document.getElementById("card_form").addEventListener("submit", function(event) {
+    document.getElementById("card_information").addEventListener("submit", function(event) {
       event.preventDefault(); 
       window.location.href = "./pages/success.html";
     });
