@@ -12,31 +12,43 @@
     <link rel="stylesheet" href="./success.css" />
 </head>
 <body>
-    <main>
-        <div class="container d-sm-none p-0 border-0">
-            <div class="bg-mobile position-relative">
-              <div class="back card position-absolute z-1 rounded-3 border-0">
-                <img src="/images/bg-card-back.png" alt="">
-                <p class="position-fixed z-3 text-white">123</p>
-              </div>
-              <div class="front card position-absolute z-3 rounded-3 border-0">
-                <img src="/images/bg-card-front.png" alt="">
-                <div class="position-fixed z-4 bg-white rounded-circle"></div>
-                <div class="position-fixed z-4 rounded-circle "></div>
-                <p class="position-fixed z-3 text-white fw-normal">9591 6489 6389 1011</p>
-                <p class="position-fixed z-3 text-white fw-normal text-uppercase">felicia leire</p>
-                <p class="position-fixed z-3 text-white fw-normal">09/26</p>
-              </div>
+  <main>
+    <div class="container-fluid p-0">
+      <div class="d-flex flex-column flex-md-row">
+        <div class="bg-website p-4">
+          <div class="card-container d-flex position-relative">
+            <div class="card-box card-back position-absolute rounded">
+              <p class="text-white position-absolute">000</p>
+            </div>
+            <div class="card-box card-front position-absolute rounded">
+              <img class="position-absolute" src="./images/card-logo.svg" alt="logo-card" />
+              <p class="text-white position-absolute">0000 0000 0000 0000</p>
+              <p class="text-white position-absolute text-uppercase">jane appleseed</p>
+              <p class="text-white position-absolute text-uppercase">00/00</p>
             </div>
           </div>
-          <div class="content p-4">
-            <div class="d-flex align-items-center flex-column mt-5">
-                <img class="mt-5" src="../images/icon-complete.svg" alt="">
-                <h1 class="text-uppercase mt-5">thank you!</h1>
-                <p class="mt-3">We've added your card details</p>
-                <a class="mt-4 continue-bt text-decoration-none p-3 w-100 rounded text-center text-white" href="../index.html">Continue</a>
-            </div>
+        </div>
+        <div class="user-input container pt-5 px-4 d-md-flex align-items-center justify-content-center">
+          <div class="user-input-container row mt-3 pt-3 d-md-flex align-items-center justify-content-center">
+            <form  method="post" id="card_information">
+              <label class="col-12 text-uppercase pt-4 fw-medium" for="card_name">cardholder name</label>
+              <input class="col-12 py-2 px-3 mt-2 py-md-3 rounded" type="text" name="card_name" id="card_name" placeholder="e.g. Jane Appleseed" required />
+
+              <label class="col-12 text-uppercase pt-4 fw-medium" for="card_number">card number</label>
+              <input class="col-12 py-2 px-3 mt-2 py-md-3 rounded" type="number" name="card_number" id="card_number" placeholder="e.g. 1234 5678 9123 0000" required />
+
+              <label class="col-7 text-uppercase pt-4 fw-medium" for="card_date">exp. date (mm/yy)</label>
+              <label class="col-3  text-uppercase pt-4 fw-medium" for="card_cvc">cvc</label>
+              <input class="col-3 py-2 px-3 mt-2 py-md-3 rounded me-1" type="number" name="card_mm" id="card_date" placeholder="MM" required />
+              <input class="col-3 py-2 px-3 mt-2 py-md-3 rounded me-2 " type="number" name="card_yy" id="card_date" placeholder="YY" required />
+              <input class="card_cvc col-5 py-2 px-3 mt-2 py-md-3 rounded " type="number" name="card_cvc" id="card_cvc" placeholder="e.g. 123" required />
+              
+              <input class="mt-4 p-3 w-100 rounded-3 text-white fw-medium" type="submit" value="Confirm">
+            </form>
           </div>
-    </main>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

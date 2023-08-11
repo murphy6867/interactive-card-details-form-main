@@ -5,91 +5,205 @@
   font-family: 'Space Grotesk', sans-serif;
 }
 
-main {
-    min-width: 100vw;
-    height: 95vh;
-  }
-
-h1 {
-    letter-spacing: 0.8vw;
+.bg-website {
+  background-image: url("../images/bg-main-desktop.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 30vw;
+  height: 95vh;
 }
 
-p {
-    color: #959196;
+.card-container {
+  width: 100%;
+  height: 50vw;
 }
+
+.card-box {
+  width: 27vw;
+  height: 14.5vw;
+  box-shadow: rgba(31, 31, 32, 0.2) 0px 8px 24px;
+}
+
+.card-back {
+  top: 25.6vw;
+  left: 14vw;
+  background-image: url("../images/bg-card-back.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-back p {
+  top: 6.3vw;
+  left: 21.5vw;
+  font-size: 1vw;
+}
+
+.card-front {
+  top: 8.9vw;
+  left: 8vw;
+  background-image: url("../images/bg-card-front.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-front img {
+  top: 1.6vw;
+  left: 1.6vw;
+  width: 20%;
+  height: auto;
+}
+
+.card-front :nth-child(2) {
+  top: 8vw;
+  left: 2vw;
+  font-size: 1.6vw;
+  letter-spacing: 0.3vw;
+}
+
+.card-front :nth-child(3) {
+  top: 11.8vw;
+  left: 2vw;
+  font-size: 0.8vw;
+  letter-spacing: 0.1vw;
+}
+
+.card-front :nth-child(4) {
+  top: 11.8vw;
+  left: 22vw;
+  font-size: 0.8vw;
+  letter-spacing: 0.1vw;
+}
+
+/* User Input */
+.user-input {
+  min-width: 70vw;
+  height: 95vh;
+}
+
+.user-input-container {
+  width: 40vw;
+  margin-left: 8vw;
+}
+
+label {
+  letter-spacing: 0.4vw;
+  font-size: 1vw;
+}
+
+input {
+  border: 1px solid #DCDCDC;
+  letter-spacing: 0.1vw;
+  font-weight: 500;
+}
+
+input[type="submit"] {
+  background-color: #220A30;
+}
+
+input::placeholder {
+  color: #C4C2C4;
+  font-weight: 500;
+}
+
+.card_cvc {
+  margin-left: 0.5vw;
+}
+
+
+@media screen and (max-width: 767px) {
   
-.bg-mobile {
-    max-width: 100%;
-    min-height: 56vw;
+  .bg-website {
     background-image: url("../images/bg-main-mobile.png");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    padding: 20px;
+    min-width: 30vw;
+    height: 62vw;
   }
   
-  .card {
-    width: 70vw;
-    height: auto;
-    border: 0;
+  .card-container {
+    width: 100%;
+    height: 50vw;
   }
-  
-  .back {
-    top: 6vw;
-    left: 25vw;
+
+  .card-box {
+    height: 80%;
+    width: 75%;
+    background-color: blanchedalmond;
   }
-  
-  .back img {
-    max-width: 100%;
-    height: auto;
+
+  .card-back {
+    top: 5vw;
+    left: 23vw;
   }
-  
-  .back p {
-    top: 22.5vw;
-    left: 80vw;
+
+  .card-back p {
+    top: 17.5vw;
+    left: 55vw;
     font-size: 3vw;
   }
   
-  .front {
+  .card-front {
     top: 27.5vw;
-  }
-  
-  .front :nth-child(2) {
-    top: 31.5vw;
-    left: 9vw;
-    width: 8vw;
-    height: 8vw;
-  }
-  
-  .front :nth-child(3) {
-    top: 34vw;
-    left: 19.5vw;
-    width: 3vw;
-    height: 3vw;
-    border: 1px solid #fff;
-  }
-  
-  .front :nth-child(4) {
-    top: 48.5vw;
-    left: 9vw;
-    font-size: 4.5vw;
-    letter-spacing: 0.5vw;
-  }
-  
-  .front :nth-child(5) {
-    top: 58.5vw;
-    left: 9vw;
-    font-size: 2vw;
-    letter-spacing: 0.5vw;
-  }
-  
-  .front :nth-child(6) {
-    top: 58.5vw;
-    left: 61vw;
-    font-size: 2vw;
-    letter-spacing: 0.5vw;
+    left: 5vw;
   }
 
-.continue-bt {
-    background-color: #220832;
+  .card-front img {
+    top: 4vw;
+    left: 4vw;
+    width: 20%;
+    height: auto;
+  }
+
+  .card-front :nth-child(2) {
+    top: 21vw;
+    left: 5vw;
+    font-size: 4.4vw;
+    letter-spacing: 0.4vw;
+  }
+
+  .card-front :nth-child(3) {
+    top: 31vw;
+    left: 5vw;
+    font-size: 2.7vw;
+    letter-spacing: 0.4vw;
+  }
+
+  .card-front :nth-child(4) {
+    top: 31vw;
+    left: 52vw;
+    font-size: 2.7vw;
+    letter-spacing: 0.4vw;
+  }
+
+  /* User input */
+  .user-input {
+    min-width: 70vw;
+    height: auto;
+  }
+
+  .user-input-container {
+    width: 100%;
+    margin-left: 0vw;
+  }
+
+  label {
+    letter-spacing: 0.4vw;
+    font-size: 3vw;
+  }
+  
+  input {
+    letter-spacing: 0.2vw;
+    font-weight: 500;
+  }
+  
 }
+
+/* Footer  */
+.attribution {
+  height: 5vh;
+}
+
