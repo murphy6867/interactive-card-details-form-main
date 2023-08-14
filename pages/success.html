@@ -18,34 +18,21 @@
         <div class="bg-website p-4">
           <div class="card-container d-flex position-relative">
             <div class="card-box card-back position-absolute rounded">
-              <p class="text-white position-absolute">123</p>
+              <p id="cardCvc" class="text-white position-absolute">123</p>
             </div>
             <div class="card-box card-front position-absolute rounded">
               <img class="position-absolute" src="../images/card-logo.svg" alt="logo-card" />
-              <p class="text-white position-absolute">9591 6489 6389 1011</p>
-              <p class="text-white position-absolute text-uppercase">felicia leire</p>
-              <p class="text-white position-absolute text-uppercase">09/26</p>
+              <p id="cardNumber" class="text-white position-absolute">9591 6489 6389 1011</p>
+              <p id="cardName" class="text-white position-absolute text-uppercase">felicia leire</p>
+              <p id="cardDate" class="text-white position-absolute text-uppercase">09/26</p>
             </div>
           </div>
         </div>
-        <div class="user-input container pt-5 px-4 d-md-flex align-items-center justify-content-center">
-          <div class="user-input-container row mt-3 pt-3 d-md-flex align-items-center justify-content-center">
-            <form  method="post" id="card_information">
-              <label class="col-12 text-uppercase pt-4 fw-medium" for="card_name">cardholder name</label>
-              <input class="col-12 py-2 px-3 mt-2 py-md-3 rounded" type="text" name="card_name" id="card_name" placeholder="e.g. Jane Appleseed" required />
-
-              <label class="col-12 text-uppercase pt-4 fw-medium" for="card_number">card number</label>
-              <input class="col-12 py-2 px-3 mt-2 py-md-3 rounded" type="number" name="card_number" id="card_number" placeholder="e.g. 1234 5678 9123 0000" required />
-
-              <label class="col-7 text-uppercase pt-4 fw-medium" for="card_date">exp. date (mm/yy)</label>
-              <label class="col-3  text-uppercase pt-4 fw-medium" for="card_cvc">cvc</label>
-              <input class="col-3 py-2 px-3 mt-2 py-md-3 rounded me-1" type="number" name="card_mm" id="card_date" placeholder="MM" required />
-              <input class="col-3 py-2 px-3 mt-2 py-md-3 rounded me-2 " type="number" name="card_yy" id="card_date" placeholder="YY" required />
-              <input class="card_cvc col-5 py-2 px-3 mt-2 py-md-3 rounded " type="number" name="card_cvc" id="card_cvc" placeholder="e.g. 123" required />
-              
-              <input class="mt-4 p-3 w-100 rounded-3 text-white fw-medium" type="submit" value="Confirm">
-            </form>
-          </div>
+        <div class="messsage d-flex flex-column align-items-center justify-content-center mt-5 mt-md-0">
+          <img class="mb-md-5 mb-4" src="../images/icon-complete.svg" alt="Complete Icon" />
+          <h1 class="text-black text-uppercase my-3">thank you!</h1>
+          <p>We've added your card details</p>
+          <a class="text-decoration-none text-white py-3 py-md-3 px-md-5 mt-4 text-center rounded-3 my-md-5 my-3 " href="../index.html">Continue</a>
         </div>
       </div>
     </div>

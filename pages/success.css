@@ -77,41 +77,25 @@
   letter-spacing: 0.1vw;
 }
 
-/* User Input */
-.user-input {
-  min-width: 70vw;
-  height: 95vh;
+/* Message */
+
+.messsage {
+  width: 100%;
 }
 
-.user-input-container {
-  width: 40vw;
-  margin-left: 8vw;
+.messsage h1 {
+  font-size: 3vw;
 }
 
-label {
-  letter-spacing: 0.4vw;
-  font-size: 1vw;
+.messsage p {
+  color: #8C888D;
+  font-size: 1.3vw;
 }
 
-input {
-  border: 1px solid #DCDCDC;
-  letter-spacing: 0.1vw;
-  font-weight: 500;
-}
-
-input[type="submit"] {
+.messsage a {
   background-color: #220A30;
+  width: 35%;
 }
-
-input::placeholder {
-  color: #C4C2C4;
-  font-weight: 500;
-}
-
-.card_cvc {
-  margin-left: 0.5vw;
-}
-
 
 @media screen and (max-width: 767px) {
   
@@ -179,26 +163,23 @@ input::placeholder {
     letter-spacing: 0.4vw;
   }
 
-  /* User input */
-  .user-input {
-    min-width: 70vw;
-    height: auto;
+  /* Message */
+  .messsage {
+    height: 45vh;
   }
 
-  .user-input-container {
-    width: 100%;
-    margin-left: 0vw;
+  .messsage h1 {
+    font-size: 6vw;
   }
 
-  label {
-    letter-spacing: 0.4vw;
+  .messsage p {
     font-size: 3vw;
   }
-  
-  input {
-    letter-spacing: 0.2vw;
-    font-weight: 500;
+
+  .messsage a {
+    width: 90%;
   }
+
   
 }
 
