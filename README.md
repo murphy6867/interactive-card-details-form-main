@@ -61,9 +61,7 @@ I've learned JavaScript, specifically focusing on regular expressions. I conside
 To see how you can add code snippets, see below:
 
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+let pattern = /^(0[1-9]|1[0-2])$/;
 ```
 
 ### Continued development
